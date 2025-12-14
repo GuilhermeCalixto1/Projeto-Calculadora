@@ -113,7 +113,22 @@ botao0.onclick = ()=>{
 }
 
 botaoigual.onclick = ()=>{
-caixa1.value = eval(caixa1.value);
+
+try {
+        let resultado = eval(caixa1.value);
+
+        // Verifica se o resultado é infinito (divisão por zero) ou inválido
+        if (!isFinite(resultado) || isNaN(resultado)) {
+            caixa1.value = "Erro";
+        } else {
+            // Aplica a formatação de casas decimais
+            caixa1.value = parseFloat(resultado.toFixed(8));
+        }
+    } catch (erro) {
+        // Se a expressão matemática estiver errada (ex: 5++5)
+        caixa1.value = "Erro";
+    }
+
 }
 
 botaomais.onclick = ()=>{

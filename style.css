@@ -1,1 +1,197 @@
+/* Reset e configurações gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background: #6b2d9e;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    background: linear-gradient(90deg, #8b5cf6 0%, #60a5fa 100%);
+    color: white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 20px;
+    margin-bottom: 30px;
+    font-size: 36px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    width: 90%;
+    max-width: 550px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+}
+
+/* Display da calculadora */
+#caixa1 {
+    width: 90%;
+    max-width: 550px;
+    background: #2d3748;
+    border: none;
+    border-radius: 20px;
+    padding: 25px 20px;
+    font-size: 42px;
+    color: #cbd5e0;
+    text-align: right;
+    margin-bottom: 25px;
+    outline: none;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Grid da calculadora */
+.calculadora-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    width: 90%;
+    max-width: 550px;
+    background: #3d2557;
+    padding: 25px;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Estilo geral dos botões */
+.calculadora-grid button {
+    background: #475569;
+    border: none;
+    border-radius: 15px;
+    padding: 22px 15px;
+    font-size: 26px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    min-height: 70px;
+}
+
+.calculadora-grid button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.4);
+    filter: brightness(1.1);
+}
+
+.calculadora-grid button:active {
+    transform: translateY(0);
+}
+
+/* Botões de números */
+#botao0,
+#botao1,
+#botao2,
+#botao3,
+#botao4,
+#botao5,
+#botao6,
+#botao7,
+#botao8,
+#botao9 {
+    background: #475569;
+}
+
+/* Botões de operação (rosa/magenta) */
+#botaodivisao,
+#botaovezes,
+#botaomenos,
+#botaomais {
+    background: #c64fc9;
+    box-shadow: 0 4px 15px rgba(198, 79, 201, 0.4);
+}
+
+#botaodivisao:hover,
+#botaovezes:hover,
+#botaomenos:hover,
+#botaomais:hover {
+    box-shadow: 0 6px 20px rgba(198, 79, 201, 0.6);
+}
+
+/* Botão igual (azul) */
+#botaoigual {
+    background: #4f9cf9;
+    box-shadow: 0 4px 15px rgba(79, 156, 249, 0.4);
+}
+
+#botaoigual:hover {
+    box-shadow: 0 6px 20px rgba(79, 156, 249, 0.6);
+}
+
+/* Botão limpar (vermelho/laranja) */
+#botaolimpar {
+    background: #f44336;
+    box-shadow: 0 4px 15px rgba(244, 67, 54, 0.4);
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#botaolimpar:hover {
+    box-shadow: 0 6px 20px rgba(244, 67, 54, 0.6);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+        padding: 25px;
+        margin-bottom: 40px;
+    }
+    
+    #caixa1 {
+        font-size: 48px;
+        padding: 30px 25px;
+        margin-bottom: 30px;
+    }
+    
+    .calculadora-grid {
+        gap: 15px;
+        padding: 30px;
+    }
+    
+    .calculadora-grid button {
+        padding: 25px 15px;
+        font-size: 24px;
+        min-height: 70px;
+    }
+    
+    #botaolimpar {
+        font-size: 18px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+        padding: 20px;
+    }
+    
+    #caixa1 {
+        font-size: 36px;
+        padding: 25px 20px;
+    }
+    
+    .calculadora-grid {
+        gap: 12px;
+        padding: 25px;
+    }
+    
+    .calculadora-grid button {
+        padding: 20px 10px;
+        font-size: 20px;
+        min-height: 60px;
+    }
+    
+    #botaolimpar {
+        font-size: 16px;
+    }
+}
