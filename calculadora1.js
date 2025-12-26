@@ -18,7 +18,7 @@ let valorcaixa;
 let num2;
 
 
-caixa1.value= 0;
+caixa1.value = '';
 
 botao1.onclick = ()=>{
 if (caixa1.value == 0) {
