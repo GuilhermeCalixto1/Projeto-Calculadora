@@ -26,7 +26,7 @@
 ## 📸 Preview do Projeto
 
 <div align="center">
-  <img src="./print-calculadora.png" alt="Demonstração da Calculadora" width="100%" style="border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.4);">
+  <img src="./img/Captura de tela 2026-01-24 204329.png" alt="Demonstração da Calculadora" width="100%" style="border-radius: 10px; box-shadow: 0px 4px 10px rgba(0,0,0,0.4);">
 </div>
 
 <br>
