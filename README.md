@@ -79,7 +79,7 @@ Como é um projeto estático, você não precisa instalar dependências.
 1. **Clone o repositório:**
    ```
    git clone https://github.com/GuilhermeCalixto1/calculadora-js.git
-
+<div id="autor"></div>
 ## 👨‍💻 Autor
 <div align="center">
 
